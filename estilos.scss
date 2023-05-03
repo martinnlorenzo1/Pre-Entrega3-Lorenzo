@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    padding: 30px;
+    text-transform: capitalize;
+
+}
+
+.barra li{
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    text-align: right;
+}
+.barra a{
+    color: #fff;
+    text-decoration: none;
+}
+.barra a:hover{
+    color: #333;
+}
+
+h2{
+    text-align: center;
+    background-color: #fff;
+    font-size: 30px;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+.blackwhite{
+    min-height: 450px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nleft{
+    background-image: url(img-3/fleur-de-lys-937638_640.jpg);
+    height: 350px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+.nright{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+.nright p{
+    text-align: center;
+    color: #fff;
+}
+.nright h3{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.galeria{
+    width: 100%;
+    min-height: auto;
+    background-color: #000;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 20px;
+}
+.item{
+    width: 100%;
+    background-color: #fff;
+    border: 5px solid #000;
+    background-size: cover;
+    background-position: center;
+}
+.item1{
+    background-image: url(img-3/bracelet-2614191_640.jpg);
+}
+.item2{
+    background-image: url(img-3/clock-1461689_640.jpg);
+}
+.item3{
+    background-image: url(img-3/eyeglasses-1866734_640.jpg);
+}
+.item4{
+    background-image: url(img-3/glasses-2144354_640.jpg);
+}
+.item5{
+    background-image: url(img-3/handbag-444171_640.jpg);
+}
+.item6{
+    background-image: url(img-3/illuminated-3106843_640.jpg);
+}
+.item7{
+    background-image: url(img-3/katy-1600434_640.jpg);
+}
+.item8{
+    background-image: url(img-3/man-1845715_640.jpg);
+}
+.footer{
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+footer i{
+    letter-spacing: 20px;
+}
+footer p{
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width:480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+    .nleft{
+        width: 50%;
+    }
+    .nright{
+        width: 50%;
+    }
+}
+@media only screen and (min-width:768px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+}
+@media only screen and (min-width:1024px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 200px);
+    }
+}
+h3{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+}
+.products{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 200px);
+    grid-gap: 20px;
+}
+.productos{
+    width: 100%;
+    background-color: #000;
+    border: 5px solid #fff;
+    background-size: cover;
+    background-position: center;
+}
+.productos1{
+    background-image: url(img-3/music-1561355_640.jpg);
+}
+.productos2{
+    background-image: url(img-3/watch-7174065_640.jpg);
+}
+.productos3{
+    background-image: url(img-3/watch-7080638_640.jpg);
+}
+.productos4{
+    background-image: url(img-3/watch-5727062_640.jpg);
+}
+.productos5{
+    background-image: url(img-3/straw-hat-3356325_640.jpg);
+}
+.productos6{
+    background-image: url(img-3/rings-6082482_640.jpg);
+}
+.productos7{
+    background-image: url(img-3/man-1845715_640.jpg);
+}
+.productos8{
+    background-image: url(img-3/handbag-444171_640.jpg);
+}
+.productos9{
+    background-image: url(img-3/katy-1600434_640.jpg);
+}
+.productos10{
+    background-image: url(img-3/accessory-1869968_640.jpg);
+}
+.productos11{
+    background-image: url(img-3/bracelet-2614191_640.jpg);
+}
+.productos12{
+    background-image: url(img-3/clock-1461689_640.jpg);
+}
+
+@media only screen and (min-width:480px){
+    .products{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 200px);
+    }
+}
+@media only screen and (min-width:768px){
+    .products{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+}
+@media only screen and (min-width:1024px){
+    .products{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+}
+
+.plr{
+    min-height: 450px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    text-align: center;
+}
+.pleft{
+    height: 350px;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.pright{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width:480px){
+    .plr{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+    .pleft{
+        width: 50%;
+    }
+    .pright{
+        width: 50%;
+    }
+}
+
+.olr{
+    min-height: 450px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    text-align: center;
+}
+.oleft{
+    height: 350px;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.oright{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width:480px){
+    .olr{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+    .oleft{
+        width: 50%;
+    }
+    .oright{
+        width: 50%;
+    }
+}
+
+.ofer{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 200px);
+    grid-gap: 20px;
+}
+
+.ofertas{
+    width: 100%;
+    background-color: #000;
+    border: 5px solid #fff;
+    background-size: cover;
+    background-position: center;
+}
+.ofertas1{
+    background-image: url(img-3/music-1561355_640.jpg);
+}
+.ofertas2{
+    background-image: url(img-3/watch-7174065_640.jpg);
+}
+.ofertas3{
+    background-image: url(img-3/watch-7080638_640.jpg);
+}
+.ofertas4{
+    background-image: url(img-3/watch-5727062_640.jpg);
+}
+.ofertas5{
+    background-image: url(img-3/straw-hat-3356325_640.jpg);
+}
+.ofertas6{
+    background-image: url(img-3/rings-6082482_640.jpg);
+}
+.ofertas7{
+    background-image: url(img-3/man-1845715_640.jpg);
+}
+.ofertas8{
+    background-image: url(img-3/handbag-444171_640.jpg);
+}
+.ofertas9{
+    background-image: url(img-3/katy-1600434_640.jpg);
+}
+.ofertas10{
+    background-image: url(img-3/accessory-1869968_640.jpg);
+}
+.ofertas11{
+    background-image: url(img-3/bracelet-2614191_640.jpg);
+}
+.ofertas12{
+    background-image: url(img-3/clock-1461689_640.jpg);
+}
+
+@media only screen and (min-width:480px){
+    .ofer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 200px);
+    }
+}
+@media only screen and (min-width:768px){
+    .ofer{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+}
+@media only screen and (min-width:1024px){
+    .ofer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+}
