@@ -45,7 +45,7 @@ h1 {
 }
 
 .blackwhite {
-  min-height: 450px;
+  min-height: 600px;
   width: 100%;
   background-color: #000;
   display: flex;
@@ -54,14 +54,15 @@ h1 {
 
 .nleft {
   background-image: url(img-3/fleur-de-lys-937638_640.jpg);
-  height: 350px;
+  height: auto;
   width: 100%;
   background-size: contain;
   background-position: center;
+  border: solid 5px #fff;
 }
 
 .nright {
-  height: 100%;
+  height: auto;
   width: 100%;
   padding: 20px;
 }
@@ -69,6 +70,7 @@ h1 {
 .nright p {
   text-align: center;
   color: #fff;
+  font-size: 20px;
 }
 
 .nright h3 {
@@ -264,7 +266,7 @@ h3 {
   }
 }
 .plr {
-  min-height: 450px;
+  min-height: 600px;
   width: 100%;
   background-color: #fff;
   display: flex;
@@ -425,4 +427,5 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 200px);
   }
+  
 }/*# sourceMappingURL=estilos.css.map */
